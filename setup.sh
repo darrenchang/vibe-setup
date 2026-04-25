@@ -30,6 +30,7 @@ ollama pull qwen3:235b
 # Install homebrew
 apt install -y git
 curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh" | bash
+source ~/.bashrc;
 
 # Install openclaw
 if which openclaw >/dev/null 2>&1; then
