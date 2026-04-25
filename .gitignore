@@ -1,12 +1,20 @@
+# --- Node BS ---
 node_modules
 package-lock.json
 package.json
-.openclaw/agents/main/sessions
-.openclaw/identity
-.openclaw/logs
-.openclaw/tasks
-.openclaw/workspace/.openclaw/workspace-state.json
+
+# --- OpenClaw Private Data ---
+.openclaw/memory/
+.openclaw/state/
+.openclaw/agents/*/agent/auth-*.json
+.openclaw/agents/*/agent/auth-state.json
+.openclaw/agents/*/agent/models.json
+
+# --- Session & Transient Data ---
+.openclaw/**/*.json
+! .openclaw/openclaw.json  # Allow the structural config, but...
+# (Note: If you put passwords in openclaw.json, 
+#  it's better to use an environment variable or a separate .env file)
+
+# --- Local Environment Specifics ---
 .openclaw/openclaw.json.bak*
-.openclaw/update-check.json
-.openclaw/openclaw.json.clobbered*
-.openclaw/openclaw.json.last-good

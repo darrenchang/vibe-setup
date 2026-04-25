@@ -20,11 +20,12 @@ else
   curl -fsSL https://ollama.com/install.sh | sh;
   source ~/.bashrc;
   ollama serve 2>&1 > /dev/null &
-  ollama pull gemma4
-  ollama pull gemma4:26b
+  sleep 5
 fi
-#ollama pull gemma4:31b
-#ollama pull qwen3:235b
+ollama pull gemma4
+ollama pull gemma4:26b
+ollama pull gemma4:31b
+ollama pull qwen3:235b
 
 # Install homebrew
 apt install -y git
