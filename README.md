@@ -7,3 +7,6 @@ In a ubuntu 22.04 docker ocntainer, run
 ./setup.sh
 ```
 
+```bash
+openclaw gateway run
+```
