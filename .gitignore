@@ -1,3 +1,12 @@
 node_modules
 package-lock.json
 package.json
+.openclaw/agents/main/sessions
+.openclaw/identity
+.openclaw/logs
+.openclaw/tasks
+.openclaw/workspace/.openclaw/workspace-state.json
+.openclaw/openclaw.json.bak*
+.openclaw/update-check.json
+.openclaw/openclaw.json.clobbered*
+.openclaw/openclaw.json.last-good
